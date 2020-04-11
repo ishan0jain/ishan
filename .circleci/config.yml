@@ -1,0 +1,35 @@
+void setup()
+{
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+}
+
+void loop()
+{
+  for(int l=2;l<=5;l++)
+    digitalWrite(l,HIGH);
+for(int i=2;i<=5;i++)
+{
+  digitalWrite(i,LOW);
+  digitalWrite(i+4,HIGH);
+  digitalWrite(i+8,LOW);
+  delay(10000);
+  for(int j=2;j<=13;j++)
+  {
+    digitalWrite(j,LOW);
+  }
+    for(int l=2;l<=5;l++)
+    digitalWrite(l,HIGH);
+  digitalWrite(i,LOW);
+  digitalWrite(i+4,LOW);
+  digitalWrite(i+8,HIGH);
+  delay(5000);
+  for(int k=2;k<=13;k++)
+  {
+    digitalWrite(k,LOW);
+  }
+    for(int l=2;l<=5;l++)
+    digitalWrite(l,HIGH);
+}
+}
