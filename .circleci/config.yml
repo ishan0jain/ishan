@@ -3,6 +3,15 @@ void setup()
   pinMode(2, OUTPUT);
   pinMode(3, OUTPUT);
   pinMode(4, OUTPUT);
+  pinMode(5,OUTPUT);
+  pinMode(6,OUTPUT);
+  pinMode(7,OUTPUT);
+  pinMode(8,OUTPUT);
+  pinMode(9,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(11,OUTPUT);
+  pinMode(12,OUTPUT);
+  pinMode(13,OUTPUT);  
 }
 
 void loop()
@@ -14,7 +23,7 @@ for(int i=2;i<=5;i++)
   digitalWrite(i,LOW);
   digitalWrite(i+4,HIGH);
   digitalWrite(i+8,LOW);
-  delay(10000);
+  delay(3000);
   for(int j=2;j<=13;j++)
   {
     digitalWrite(j,LOW);
@@ -24,7 +33,7 @@ for(int i=2;i<=5;i++)
   digitalWrite(i,LOW);
   digitalWrite(i+4,LOW);
   digitalWrite(i+8,HIGH);
-  delay(5000);
+  delay(1000);
   for(int k=2;k<=13;k++)
   {
     digitalWrite(k,LOW);
